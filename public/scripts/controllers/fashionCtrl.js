@@ -1,4 +1,5 @@
 myApp.controller('fashionCtrl', function($scope, $q, UserService) {
+	//functionalit added
     UserService.getUserData()
         .then(
             function(result) {
