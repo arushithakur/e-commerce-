@@ -1,0 +1,264 @@
+clothes: [
+
+
+
+    {
+        "id": "1",
+        "name": "Rain & Rainbow",
+        "gender": "female",
+        "brand": "Biba",
+        "desc":
+        {
+            "color": "multiple",
+            "price": "1200",
+            "fabric": "cotton",
+            "type": "dress",
+            "pattern": "floral print"
+        },
+        "image": ["./assets/images/raindress1.png", "./assets/images/raindress2.png", "./assets/images/raindress3.png"],
+        "reviews": [
+        {
+            "by": "Shruti",
+            "comment": "amazing dress, good quality material"
+        },
+        {
+            "by": "Ritu",
+            "comment": "It fits perfectly fine and true to size . I like to pair it with some gray leggings. "
+        },
+        {
+            "by": "Seema",
+            "comment": "stylish n comfortable !!"
+        }]
+
+
+    }
+
+    {
+        "id": "2",
+        "name": "Blue Tunic",
+        "gender": "female",
+        "brand": "Vero Moda",
+        "desc":
+        {
+            "color": "blue",
+            "price": "700",
+
+            "fabric": "crepe",
+            "type": "top",
+            "pattern": "printed"
+        },
+        "image": [
+            "./assets/images/bluetunic1.png",
+            "./assets/images/bluetunic2.png",
+            "./assets/images/bluetunic3.png"
+        ],
+        "reviews": [
+        {
+            "by": "Nupur",
+            "comment": "very happy with the service and quality of fabric!"
+        },
+        {
+            "by": "Nita",
+            "comment": "very classy, worth the money"
+        },
+        {
+            "by": "Shirin",
+            "comment": "Great quality and perfect fitting"
+        }]
+
+
+    }
+
+    {
+        "id": "3",
+        "name": "Long Shrug",
+        "gender": "female",
+        "brand": "Vero Moda",
+        "desc":
+        {
+            "color": "pink",
+            "price": "700",
+
+            "fabric": "wool",
+            "type": "shrug",
+            "pattern": "plain"
+        },
+        "image": ["./assets/images/shrug1.png", "./assets/images/shrug2.png", "./assets/images/shrug3.png"],
+        "reviews": [
+        {
+            "by": "Annu",
+            "comment": "great quality,perfect fit,nice color.Exactly like the picture.This is what I would call great value purchase "
+        },
+        {
+            "by": "Tina ",
+            "comment": "Absolutely loved this dress!The length was perfect and the material is great.Very chic and fits perfectly"
+        },
+        {
+            "by ": "Riya",
+            "comment": "Excellent material and beautiful design,it’ s just like the photos online."
+        }]
+
+
+    }
+
+    {
+        "id": "4",
+        "name": " Comfy Sweater",
+        "gender": "female",
+        "brand": "Tommy Hilfiger",
+        "desc":
+        {
+            "color": "yellow",
+            "price": "800",
+
+            "fabric": "wool",
+            "type": "sweater",
+            "pattern": "plain"
+        },
+        "image": ["./assets/images/sweater1.png", "./assets/images/sweater2.png", "./assets/images/sweater3.png"],
+        "reviews": [
+        {
+            "by": "Masha",
+            "comment": "another dashing clothing item added to my collection!"
+        },
+        {
+            "by": "Kanika",
+            "comment": "beautiful sweater,amazing fabric, super comfortable"
+        },
+        {
+            "by": "Mehak",
+            "comment": "I love this sweater it’s one of my favourites. It has a very flattering fit."
+        }]
+
+
+
+    }
+
+    {
+        "id": "5",
+        "name": "A-Line Kurta",
+        "gender": "female",
+        "brand": "Biba",
+        "desc":
+        {
+            "color": "beige",
+            "price": "1000",
+
+            "fabric": "cotton",
+            "type": "kurta",
+            "pattern": "printed"
+        },
+        "image": ["./assets/images/kurta1.png", "./assets/images/kurta2.png", "./assets/images/kurta3.png"],
+        "reviews": [
+        {
+            "by": "Radhika",
+            "comment": "perfect fit and great quality."
+        },
+        {
+            "by": "Arshiya ",
+            "comment ": "Great addition to wardrobe "
+        },
+        {
+            "by ": "Roohie ",
+            "comment ": "really love the pattern on this kurta and it is exactly as it looks "
+        }]
+
+
+    }
+
+    {
+        "id": "6",
+        "name": "Casual Blazer",
+        "gender": "female",
+        "brand": "Tommy Hilfiger",
+        "desc":
+        {
+            "color": "black",
+            "price": "1200",
+
+            "fabric": "crepe",
+            "type": "blazer",
+            "pattern": "printed"
+        },
+        "image": ["./assets/images/blazer1.png", "./assets/images/blazer2.png", "./assets/images/blazer3.png"],
+        "reviews": [
+        {
+            "by ": "Kamal ",
+            "comment ": "really love the pattern on this blazer and it is exactly as it looks online "
+        },
+        {
+            "by ": "Simran ",
+            "comment ": "Cute and casual "
+        },
+        {
+            "by ": "Prachi ",
+            "comment ": "I love the fitting of this blazer.Thank you for early shipping."
+        }]
+
+
+    }
+
+    {
+        "id": "7",
+        "name": "Casual Trousers",
+        "gender": "female",
+        "brand": "Tommy Hilfiger",
+        "desc":
+        {
+            "color": "black",
+            "price": "800",
+
+            "fabric": "cotton",
+            "type": "trousers",
+            "pattern": "plain"
+        },
+        "image": ["./assets/images/trouser1.png", "./assets/images/trouser2.png", "./assets/images/trouser3.png"],
+        "reviews": [
+        {
+            "by": "Aditi",
+            "comment": "chic and classy"
+        },
+        {
+            "by": "Mary",
+            "comment": "looking forward to more colours in the same clothing item. I really like the fitting and design of this product."
+        },
+        {
+            "by": "Surbhi",
+            "comment": "The fabric quality was impressive."
+        }]
+
+
+    }
+
+    {
+        "id": "8",
+        "name": "Crop Top",
+        "gender": "female",
+        "brand": "Vero Moda",
+        "desc":
+        {"color": "pink",
+        "price": "900",
+        
+        "fabric": "crepe",
+        "type": "top",
+        "pattern": "plain"
+    },
+        "image": ["./assets/images/top1.png ","./assets/images/top2.png ","./assets/images/top3.png "],
+        "reviews": [
+       {"by ":"Meenu ",
+        "comment ":"The fabric quality was superb,I love the design."
+     },
+        {"by ":"Ruchi ",
+        "comment ":"beautiful color,pretty design "
+    },
+        {"by ":"Swati ",
+        "comment ":"I really like the ruffles in this top.Thank you for quality service."
+    }
+
+    ]
+
+
+    }
+
+
+]

@@ -1,0 +1,183 @@
+<html ng-app="myApp">
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .navbar {
+        border-radius: 0;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/controllers/fashionCtrl.js"></script>
+    <script src="./scripts/services/userService.js"></script>
+
+    <title>Our Web Store</title>
+</head>
+<!-- apply our angular app to our site -->
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span><img src="./assets/images/005-monitor.png"></span> WebStore</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNav">
+               <!--  <ul class="nav navbar-nav m-nav-middle-li">
+                    <li><a ui-sref="home">Home</a></li>
+                    <li><a ui-sref="mobile">Mobiles</a></li>
+                    <li><a ui-sref="laptop">Laptops</a></li>
+                    <li><a ui-sref="speaker">Speakers</a></li>
+                    <li><a ui-sref="television">Televisions</a></li>
+                </ul> -->
+                <ul class="nav navbar-nav navbar-right ">
+                    <li><a ui-sref="cart" class="navBarRight"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Cart</a></li>
+                     <li><a ui-sref="admin" class="navBarRight"><i class="fas fa-upload"></i>Admin</a></li>
+                </ul>
+                <!--    <ul class="nav navbar-nav navbar-right">
+                <!--  <li><a href="#">Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"/>Login</a></li>  -->
+                <!--  <form class="form-inline form-group">
+                    <input class="form-control mr-sm-2" id="myInput" type="search" placeholder="Search" aria-label="Search">
+                    <!-- style="padding-top: 20px;" > -->
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        style="margin-top: 20px; margin-bottom: 20px"Search</button>
+                </form>
+            </ul>   -->
+            </div>
+        </nav>
+        <!-- MAIN CONTENT -->
+        <div class="container-fluid view-container">
+            <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+            <div ui-view></div>
+        </div>
+        <footer class="page-footer">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-headings"> Category</div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center footer-content">
+                            <ul class="footer-category-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">School</a></li>
+                                <li><a href="#">College</a></li>
+                                <li><a href="#">Office</a></li>
+                                <li><a href="#">Institutions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-headings"> Useful Links</div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center footer-content">
+                            <ul class="footer-category-list">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                                <li><a href="#">Term of Use</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-headings"> Social Media</div>
+                    <div class="row social-row">
+                        <div class="col-sm-12 text-center footer-content">
+                            <div class="row social-row-content">
+                                <div class="col-md-2 col-sm-6 col-md-offset-2"><img src="./assets/images/006-google-plus.png" class="footer-social-image"></div>
+                                <div class="col-md-8  col-sm-6 "><a href="https://plus.google.com/">Google Plus</a></div>
+                            </div>
+                            <div class="row social-row-content">
+                                <div class="col-md-2 col-sm-6 col-md-offset-2 "><img src="./assets/images/007-linkedin.png" class="footer-social-image"></div>
+                                <div class="col-md-8 col-sm-6"><a href="https://in.linkedin.com/">linkedIn</a></div>
+                            </div>
+                            <div class="row social-row-content">
+                                <div class="col-md-2 col-sm-6 col-md-offset-2"><img src="./assets/images/008-social-media-1.png" class="footer-social-image"></div>
+                                <div class="col-md-8"><a href="https://twitter.com/login">Twitter</a></div>
+                            </div>
+                            <div class="row social-row-content">
+                                <div class="col-md-2 col-sm-6 col-md-offset-2"><img src="./assets/images/009-social-media.png" class="footer-social-image"></div>
+                                <div class="col-md-8"><a href="https://www.facebook.com/">Facebook</a></div>
+                            </div>
+                            <!-- <ul class="footer-category-list">
+                            <li><img src="./assets/images/006-google-plus.png" class="footer-social-image"><a href="https://plus.google.com/">Google Plus</a></li>
+                            <li><img src="./assets/images/007-linkedin.png" class="footer-social-image"><a href="https://in.linkedin.com/">linkedIn</a></li>
+                            <li><img src="./assets/images/008-social-media-1.png" class="footer-social-image"><a href="https://twitter.com/login">Twitter</a></li>
+                            <li><img src="./assets/images/009-social-media.png" class="footer-social-image"><a href="https://www.facebook.com/">Facebook</a></li>
+                        </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-headings"> Contact Us</div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center footer-content">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-6 "><img src="./assets/images/001-computer.png" class="footer-social-image"></div>
+                                <div class="col-md-8 col-md-offset-2 col-sm-6">
+                                    <ul class="footer-category-list">
+                                        <li>5271521</li>
+                                        <li>72865865865</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-6"><img src="./assets/images/002-technology.png" class="footer-social-image"></div>
+                                <div class="col-md-8 col-md-offset-2">
+                                    <ul class="footer-category-list">
+                                        <li>5271521</li>
+                                        <li>72865865865</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-6"><img src="./assets/images/telephone.png" class="footer-social-image"></div>
+                                <div class="col-md-8 col-md-offset-2">
+                                    <ul class="footer-category-list">
+                                        <li>contact@webstore.com</li>
+                                        <li>queries@webstore.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-6"><img src="./assets/images/003-clock.png" class="footer-social-image"></div>
+                                <div class="col-md-8 col-md-offset-2">
+                                    <ul class="footer-category-list">
+                                        <li>5271521</li>
+                                        <li>72865865865</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+
+         <script type="text/javascript" src="./controllers/adminCtrl.js"></script>
+       
+</body>
+
+</html>

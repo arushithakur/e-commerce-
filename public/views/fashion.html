@@ -1,0 +1,11 @@
+<div class="sidenav col-md-2">
+    <a ui-sref="mobile">Mobiles</a>
+    <a ui-sref="fashion">Fashion</a>
+    <a ui-sref="sports">Sports</a>
+</div>
+<div class="jumbotron text-center col-md-10">
+    <h1>The Fashion Page display</h1>
+    <div ng-repeat="users in userData">
+        {{users.name}}
+    </div>
+</div>

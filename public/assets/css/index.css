@@ -1,0 +1,81 @@
+.page-footer{
+
+background: black;
+
+}
+
+.footer-headings
+{
+
+	font-size: 20px;
+	color:white;
+	text-align: center;
+}
+
+.footer-content a
+{
+
+	/*color:grey;
+	padding: 8px 5px 2px 2px;*/
+	font-size: 15px;
+
+	
+}
+
+.footer-content 
+{
+
+	/*color:grey;
+	padding: 8px 5px 2px 2px;*/
+	color: white;
+	
+	
+}
+
+.footer-category-list
+{
+  list-style: none;
+  color:lightgrey;
+	padding: 8px 5px 1px 1px;
+}
+
+.footer-social-image
+{
+    
+	padding: 3px 3px 3px 3px;
+	margin-right: 0px;
+}
+
+.social-row
+{
+	padding: 8px 5px 1px 1px;
+}
+
+.social-row-content
+{
+	padding: 5px;
+}
+
+ .division
+ {
+
+
+ }
+
+ @media only screen and (max-width: 500px) {
+     .navBarRight
+     {
+        padding: 0px;
+    }
+}
+
+
+.view-container
+{
+
+	padding-top: 50px;
+	margin-left: 0px;
+	padding-left:0px; 
+}
+
+
