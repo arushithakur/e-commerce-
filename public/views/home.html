@@ -1,42 +1,109 @@
-<div class="sidenav col-md-2">
+<div class="sidenav col-md-2 col-sm-2 col-xs-2">
+
     <a ui-sref="mobile">Mobiles</a>
     <a ui-sref="fashion">Fashion</a>
     <a ui-sref="sports">Sports</a>
     <!--  <a href="#">Contact</a> -->
 </div>
 <!-- Page content -->
-<div class="main col-md-10">
+<div class="main col-md-10 col-sm-10 col-xs-10">
     <!--  for mobiles -->
-    <div class="row">
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
+    <div class="row col-md-offset-1">
+        <h2 class="text-center">Fashion </h2>
+        <div class="carousel slide" id="cCarousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3" ng-repeat="cloth in cData.slice(0,4)">
+                            <img class="img-responsive" ng-src="{{cloth.image[0]}}" alt="Not Found" style="height: 200px;width:50%; margin-left: 15px" />
+                            <div class="home__label-align text-center">{{cloth.name}}</div>
+                            <div class="home__label-align text-center"> ₹: {{cloth.price}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 home__li-align" ng-repeat="cloth in cData.slice(5,9)">
+                            <img ng-src="{{cloth.image[0]}}" alt="Not Found" style="height: 200px;width:50% ; margin-left:15px;" />
+                            <div class="home__label-align text-center">{{cloth.name}}</div>
+                            <div class="home__label-align text-center"> ₹: {{cloth.price}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#cCarousel" data-slide="prev" style="margin-bottom: 70px; margin-left: -120px;  color: black; background: none"><i class="glyphicon glyphicon-chevron-left" ></i></a>
+            <a class="right carousel-control" href="#cCarousel" data-slide="next" style="margin-bottom: 70px; margin-right: -70px;  color: black; background: none"><i class="glyphicon glyphicon-chevron-right"></i></a>
         </div>
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
-        </div>
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
-        </div>
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
+       <div class="row">
+            <button type="button" class="btn btn-info" style="float: right; margin: 10px;" ui-sref="fashion">See More</button>
         </div>
     </div>
     <!-- for clothes -->
-    <div class="row">
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
+    <div class="row col-md-offset-1">
+        <h2 class="text-center">Mobiles </h2>
+        <div class="carousel slide" id="mCarousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3" ng-repeat="mobile in mData.slice(0,4)">
+                            <img ng-src="{{mobile.image[0]}}" alt="Not Found" style="height: 200px;width:50%; margin-left: 15px" />
+                            <div class="home__label-align text-center">{{mobile.name}}</div>
+                            <div class="home__label-align text-center"> ₹: {{mobile.price}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 home__li-align" ng-repeat="mobile in mData.slice(5,9)">
+                            <img ng-src="{{mobile.image[0]}}" alt="Not Found" style="height: 200px;width:50%; margin-left: 15px" />
+                            <div class="home__label-align text-center">{{mobile.name}}</div>
+                            <div class="home__label-align text-center"> ₹: {{mobile.price}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" data-target="#mCarousel" data-slide="prev" style="margin-bottom: 70px; margin-left: -120px;  color: black; background: none"><i class="glyphicon glyphicon-chevron-left" ></i></a>
+            <a class="right carousel-control" data-target="#mCarousel" data-slide="next" style="margin-bottom: 70px; margin-right: -70px;  color: black; background: none"><i class="glyphicon glyphicon-chevron-right"></i></a>
         </div>
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
-        </div>
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
-        </div>
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
+      <div class="row">
+            <button type="button" class="btn btn-info" style="float: right; margin: 10px;" ui-sref="mobile">See More</button>
         </div>
     </div>
     <!-- for sports -->
-    <div class="row">
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
+    <div class="row col-md-offset-1">
+        <h2 class="text-center">Sports </h2>
+        <div class="carousel slide" id="sCarousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3" ng-repeat="sportItem in sData.slice(0,4)">
+                            <img ng-src="{{sportItem.image[0]}}" alt="Not Found" style="height: 200px;width:50%; margin-left: 15px" />
+                            <div class="home__label-align text-center">{{sportItem.name}}</div>
+                            <div class="home__label-align text-center"> ₹: {{sportItem.price}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 home__li-align" ng-repeat="sportItem in sData.slice(5,9)">
+                            <img ng-src="{{sportItem.image[0]}}" alt="Not Found" style="height: 200px;width:50%; margin-left: 15px" />
+                            <div class="home__label-align text-center">{{sportItem.name}}</div>
+                            <div class="home__label-align text-center"> ₹: {{sportItem.price}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" data-target="#sCarousel" data-slide="prev" style="margin-bottom: 70px; margin-left: -120px;  color: black; background: none"><i class="glyphicon glyphicon-chevron-left" ></i></a>
+            <a class="right carousel-control" data-target="#sCarousel" data-slide="next" style="margin-bottom: 70px; margin-right: -70px;  color: black;background: none"><i class="glyphicon glyphicon-chevron-right"></i></a>
         </div>
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
-        </div>
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
-        </div>
-        <div class="col-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa arcu, dictum ut turpis sed, lobortis dictum lacus. Pellentesque enim.
+        <div class="row">
+            <button type="button" class="btn btn-info" style="float: right; margin: 10px;" ui-sref="sports">See More</button>
         </div>
     </div>
 </div>

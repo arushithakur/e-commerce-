@@ -2,10 +2,42 @@
     <a ui-sref="mobile">Mobiles</a>
     <a ui-sref="fashion">Fashion</a>
     <a ui-sref="sports">Sports</a>
+    <h3>Filter by Brand</h3>
+    <!-- <div class="checkbox">
+        <label>
+            <input type="checkbox" value="Vero Moda">Vero Moda</label>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="Biba">Biba</label>
+    </div>
+    <div class="checkbox disabled">
+        <label>
+            <input type="checkbox" value="Tommy Hilfiger">Tommy Hilfiger</label>
+    </div> -->
+    <!--  <div ng-repeat="u in textBox  ">
+        <input type="checkbox" ng-click='searchItem()' ng-model="search[u]" /> {{ u }}
+    </div> -->
+    <div ng-repeat="u in textBox  ">
+        <input type="checkbox" ng-model="search[u]" /> {{ u }}
+    </div>
 </div>
-<div class="jumbotron text-center col-md-10">
-    <h1>The Fashion Page display</h1>
-    <div ng-repeat="users in userData">
-        {{users.name}}
+<div class="col-md-10">
+    <div class="jumbotron text-center">
+        <h1>The Fashion Page display</h1>
+    </div>
+    <div class="row ">
+        <!--  <div class="col-md-3 text-center" data-ng-repeat="fashion in fashionData | selectedBrand:selectedBrands"> -->
+        <div class="col-md-3 text-center" data-ng-repeat="fashion in fashionData | filter : searchBy()">
+            <div class="card">
+                <div class="card-body">
+                    <a><img src="{{fashion.image[0]}}"></a>
+                    <div class="card-title fashionCard">
+                        <h4>{{fashion.name}}</h4>
+                    </div>
+                    <button class="btn btn-info">Details</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

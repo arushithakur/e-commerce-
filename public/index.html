@@ -1,32 +1,49 @@
-<html ng-app="myApp">
+<html ng-app="myApp" ng-controller="mainCtrl" ng-init="initFunction()">
 
 <head>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
+   
+    <!--   <link rel="stylesheet" href="../node_modules/angular-slick-carousel/slick/slick-theme.css"> -->
+<!--     <link href="./node_modules/dist/angular-carousel.css" rel="stylesheet" type="text/css" /> -->
+ <!--    <link href="./assets/css/angular-carousel.css.map" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/angular-carousel.min.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/fashion.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <style>
+
     .navbar {
         border-radius: 0;
     }
     </style>
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- JS (load angular, ui-router, and our custom js file) -->
-   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
 
+   <!--          <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script> -->
+<!--    <script src="angular.js"></script>
+<script src="angular-touch.js"></script> -->
+<!-- <script src="./assets/css/angular-carousel.js"></script> -->
+<!--  <script src="./assets/css/angular-carousel.min.js"></script> -->
     <script src="./scripts/app.js"></script>
+    
+    <script src="./scripts/services/allService.js"></script>
     <script src="./scripts/controllers/fashionCtrl.js"></script>
-    <script src="./scripts/services/userService.js"></script>
-
+    <script src="./scripts/controllers/homeCtrl.js"></script>
     <title>Our Web Store</title>
+   
 </head>
 <!-- apply our angular app to our site -->
 
@@ -44,7 +61,7 @@
                 <a class="navbar-brand" href="#"><span><img src="./assets/images/005-monitor.png"></span> WebStore</a>
             </div>
             <div class="collapse navbar-collapse" id="myNav">
-               <!--  <ul class="nav navbar-nav m-nav-middle-li">
+                <!--  <ul class="nav navbar-nav m-nav-middle-li">
                     <li><a ui-sref="home">Home</a></li>
                     <li><a ui-sref="mobile">Mobiles</a></li>
                     <li><a ui-sref="laptop">Laptops</a></li>
@@ -53,7 +70,7 @@
                 </ul> -->
                 <ul class="nav navbar-nav navbar-right ">
                     <li><a ui-sref="cart" class="navBarRight"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Cart</a></li>
-                     <li><a ui-sref="admin" class="navBarRight"><i class="fas fa-upload"></i>Admin</a></li>
+                    <li><a ui-sref="admin" class="navBarRight"><i class="fas fa-upload"></i>Admin</a></li>
                 </ul>
                 <!--    <ul class="nav navbar-nav navbar-right">
                 <!--  <li><a href="#">Sign Up</a></li>
@@ -68,7 +85,7 @@
             </div>
         </nav>
         <!-- MAIN CONTENT -->
-        <div class="container-fluid view-container">
+        <div class="container-fluid view-container" style=" overflow:hidden">
             <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
             <div ui-view></div>
         </div>
@@ -175,9 +192,6 @@
                     </div>
                 </div>
         </footer>
-
-         <script type="text/javascript" src="./controllers/adminCtrl.js"></script>
-       
 </body>
 
 </html>

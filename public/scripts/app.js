@@ -10,6 +10,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         .state('home', {
             url: '/home',
             templateUrl: './views/home.html',
+            controller:'homeCtrl'
             
         })
 
@@ -55,3 +56,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         });
 
 });
+myApp.controller('mainCtrl',function($scope,$state){
+    $scope.initFunction=function(){
+        $state.go('home');
+    }
+})
