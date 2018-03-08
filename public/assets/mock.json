@@ -16,9 +16,9 @@
                 "pattern": "floral print"
             },
             "image": [
-                "./assets/images/raindress1 .png",
+                "./assets/images/raindress3.png",
                 "./assets/images/raindress2.png",
-                "./assets/images/raindress3.png"
+                "./assets/images/raindress1 .png"
             ],
             "reviews": [
             {
@@ -27,7 +27,7 @@
             },
             {
                 "title": "Ritu",
-                "comment": "It fits perfectly fine and true to size . I like to pair it with some gray leggings. "
+                "comment": "It fits perfectly fine and true to size . I like to pair it with some gray legginWilson. "
             },
             {
                 "title": "Seema",
@@ -53,8 +53,8 @@
                 "pattern": "printed"
             },
             "image": [
-                "./assets/images/bluetunic2.png",
                 "./assets/images/bluetunic1.png",
+                "./assets/images/bluetunic2.png",
                 "./assets/images/bluetunic3.png"
             ],
             "reviews": [
@@ -163,12 +163,12 @@
                 "comment": "perfect fit and great quality."
             },
             {
-                "title": "Arshiya ",
-                "comment ": "Great addition to wardrobe "
+                "title": "Arshiya",
+                "comment": "Great addition to wardrobe "
             },
             {
-                "title ": "Roohie ",
-                "comment ": "really love the pattern on this kurta and it is exactly as it looks "
+                "title": "Roohie",
+                "comment": "really love the pattern on this kurta and it is exactly as it looks "
             }]
 
 
@@ -192,16 +192,16 @@
             "image": ["./assets/images/blazer1.png", "./assets/images/blazer2.png", "./assets/images/blazer3.png"],
             "reviews": [
             {
-                "title ": "Kamal ",
-                "comment ": "really love the pattern on this blazer and it is exactly as it looks online "
+                "title": "Kamal ",
+                "comment": "really love the pattern on this blazer and it is exactly as it looks online "
             },
             {
-                "title ": "Simran ",
+                "title": "Simran ",
                 "comment ": "Cute and casual "
             },
             {
-                "title ": "Prachi ",
-                "comment ": "I love the fitting of this blazer.Thank you for early shipping."
+                "title": "Prachi ",
+                "comment": "I love the fitting of this blazer.Thank you for early shipping."
             }]
 
 
@@ -258,16 +258,16 @@
             "image": ["./assets/images/top1.png ", "./assets/images/top2.png ", "./assets/images/top3.png "],
             "reviews": [
                 {
-                    "title ": "Meenu ",
-                    "comment ": "The fabric quality was superb,I love the design."
+                    "title ": "Meenu",
+                    "comment": "The fabric quality was superb,I love the design."
                 },
                 {
-                    "title ": "Ruchi ",
-                    "comment ": "beautiful color,pretty design "
+                    "title": "Ruchi",
+                    "comment": "beautiful color,pretty design "
                 },
                 {
-                    "title ": "Swati ",
-                    "comment ": "I really like the ruffles in this top.Thank you for quality service."
+                    "title": "Swati",
+                    "comment": "I really like the ruffles in this top.Thank you for quality service."
                 }
 
             ]
@@ -474,7 +474,7 @@
 
         {
             "id": "F15",
-            "name": "Peter England Striped Men's Polo Neck Blue T-Shirt",
+            "name": "Peter England Polo Neck Blue T-Shirt",
             "gender": "male",
             "brand": "Peter England",
             "price": 779,
@@ -541,6 +541,7 @@
 
     "mobiles": [
         {
+            "id": "M1",
             "name": "Samsung Galaxy On",
             "brand": "samsung",
             "image": ["assets/images/samsunggalaxyon1.png", "assets/images/samsunggalaxyon2.png", "assets/images/samsunggalaxyon3.png"],
@@ -573,6 +574,7 @@
             }]
         },
         {
+            "id": "M2",
             "name": "Samsung Galaxy J3 Pro",
             "brand": "samsung",
             "image": ["assets/images/samsunggalaxyj3pro1.png", "assets/images/samsunggalaxyj3pro2.png", "assets/images/samsunggalaxyj3pro3.png"],
@@ -605,6 +607,7 @@
             }]
         },
         {
+            "id": "M3",
             "name": "Samsung Galaxy J7 Nxt",
             "brand": "samsung",
             "image": ["assets/images/samsunggalaxyj7nxt1.png", "assets/images/samsunggalaxyj7nxt2.png", "assets/images/samsunggalaxyj7nxt3.png"],
@@ -637,6 +640,7 @@
             }]
         },
         {
+            "id": "M4",
             "name": "Samsung Galaxy J7 Pro",
             "brand": "samsung",
             "image": ["assets/images/samsungj7pro1.png", "assets/images/samsungj7pro2.png", "assets/images/samsungj7pro3.png"],
@@ -671,6 +675,7 @@
             ]
         },
         {
+            "id": "M5",
             "name": "Samsung Galaxy On Max",
             "brand": "samsung",
             "image": ["assets/images/samsungonmax1.png", "assets/images/samsungonmax2.png", "assets/images/samsungonmax3.png"],
@@ -703,6 +708,7 @@
             }]
         },
         {
+            "id": "M6",
             "name": "HTC Desire 630",
             "brand": "htc",
             "image": ["assets/images/htcdesire6301.png", "assets/images/htcdesire6302.png", "assets/images/htcdesire6303.png"],
@@ -735,6 +741,7 @@
             }]
         },
         {
+            "id": "M7",
             "name": "HTC One X9",
             "brand": "htc",
             "image": ["assets/images/htconex91.png", "assets/images/htconex92.png", "assets/images/htconex93.png"],
@@ -767,7 +774,7 @@
             }]
         },
         {
-
+            "id": "M8",
             "name": "HTC U11",
             "brand": "htc",
             "image": ["assets/images/htc-u11Front.png", "assets/images/htc-u11Back.png", "assets/images/htc-u11Side.png"],
@@ -802,9 +809,9 @@
             }]
         },
         {
-
+            "id": "M9",
             "name": "Samsung s7 Edge",
-            "brand": "samsung ",
+            "brand": "samsung",
             "image": ["assets/images/samsung-s7-edgeFront.png", "assets/images/samsung-s7-edgeBack.png", "assets/images/samsung-s7-edgeSide.png"],
             "price": 46170,
             "features":
@@ -836,9 +843,9 @@
             }]
         },
         {
-
+            "id": "M10",
             "name": "Samsung Galaxy Note 8 ",
-            "brand": "samsung ",
+            "brand": "samsung",
             "image": ["assets/images/samsung-galaxy-noteFront.png", "assets/images/samsung-galaxy-noteBack.png", "assets/images/samsung-galaxy-noteSide.png"],
             "price": 67300,
             "features":
@@ -870,9 +877,9 @@
             }]
         },
         {
-
+            "id": "M11",
             "name": "Apple iPhone 8 Plus ",
-            "brand": "apple ",
+            "brand": "apple",
             "image": ["assets/images/apple-iphone-8-plusFront.png", "assets/images/apple-iphone-8-plusBack.png", "assets/images/apple-iphone-8-plusSide.png"],
             "price": 65999,
             "features":
@@ -888,7 +895,7 @@
                 "color": "Space Grey"
             },
 
-            "desc": "An all-new glass design, an updated camera, and a powerful chip, there’s so much to love about the iPhone 8 Plus. This iPhone brings you an augmented reality experience that’s more immersive than before. What’s more? You can charge your iPhone wirelessly!",
+            "desc": "An all-new glass design, an updated camera, and a powerful chip, there’s so much to love about the iPhone 8 Plus. This iPhone brinWilson you an augmented reality experience that’s more immersive than before. What’s more? You can charge your iPhone wirelessly!",
             "reviews": [
             {
                 "title": "Bobby",
@@ -904,9 +911,9 @@
             }]
         },
         {
-
+            "id": "M12",
             "name": "Apple iPhone 6",
-            "brand": " apple ",
+            "brand": "apple",
             "image": ["assets/images/apple-iphone-6Front.png", "assets/images/apple-iphone-6Back.png", "assets/images/apple-iphone-6Side.png"],
             "price": 25699,
             "features":
@@ -940,9 +947,9 @@
         {
 
 
-
+            "id": "M13",
             "name": "HTC U ULtra ",
-            "brand": " htc",
+            "brand": "htc",
             "image": ["assets/images/htc-u-ultraFront.png", "assets/images/htc-u-ultraBack.png", "assets/images/htc-u-ultraSide.png"],
             "price": 29990,
             "features":
@@ -976,9 +983,9 @@
         },
 
         {
-
+            "id": "M14",
             "name": "HTC One 802d",
-            "brand": "htc ",
+            "brand": "htc",
             "image": ["assets/images/htc-one-originalFront.png", "assets/images/htc-one-originalBack.png", "assets/images/htc-one-originalSide.png"],
             "price": 35499,
             "features":
@@ -1010,9 +1017,9 @@
             }]
         },
         {
-
+            "id": "M15",
             "name": "Samsung Galaxy A9 Pro",
-            "brand": " samsung",
+            "brand": "samsung",
             "image": ["assets/images/samsung-galaxy-a9Front.png", "assets/images/samsung-galaxy-a9Back.png", "assets/images/samsung-galaxy-a9Side.png"],
             "price": 25999,
             "features":
@@ -1046,166 +1053,165 @@
     ],
 
     "sport": [
+        // {
+        //     "id": "S1",
+        //     "name": "Hero Storm Football",
+        //     "brand": "Hero",
+        //     "price": 272,
+        //     "image": ["assets/images/football_s01.png", "assets/images/football_s12.png", "assets/images/football_s13.png"],
+        //     "features": 
+        //     {
+        //         "Material": "Rubber",
+        //         "color": "White",
+        //         "Weight": "420"
+        //     },
+        //     "reviews": [
+        //     {
+        //         "title": "Nice",
+        //         "comment": "This product is awesome"
+        //     },
+        //     {
+        //         "title": "Rubber will hurt",
+        //         "comment": "Rubber Moulding will hurt on leWilson if you dont play with shoes. A bit more bouncy ball. And this line because the review needed min 100 characters"
+        //     }]
+
+        // },
+        // {
+        //     "id": "S2",
+        //     "name": "Nike Barcelona Football",
+        //     "brand": "Nike",
+        //     "price": 300,
+        //     "image": ["assets/images/football_s21.png", "assets/images/football_s22.png", "assets/images/football_s23.png"],
+        //     "features": 
+        //     {
+        //         "Material": "Rubber",
+        //         "color": "blue",
+        //         "Weight": "420"
+        //     },
+        //     "reviews": [
+        //     {
+        //         "title": "Luv it",
+        //         "comment": "Is it real"
+        //     },
+        //     {
+        //         "title": "Product as expected",
+        //         "comment": "Happy 😊"
+        //     }]
+
+        // },
+        // {
+        //     "id": "S3",
+        //     "name": "Wilson Optipro Cricket Helmet",
+        //     "brand": "Wilson",
+        //     "price": 979,
+        //     "image": ["assets/images/helmet_s31.png", "assets/images/helmet_s32.png", "assets/images/helmet_s33.png"],
+        //     "features": 
+        //     {
+        //         "Material":"plastic",
+        //         "color":"blue"
+        //     },
+        //     "reviews": [
+        //     {
+        //         "title": "Pretty good",
+        //         "comment": "The Product was excellent but one problem was that one bolt was missing. It doesn't create any problem but due to that the product was not complete"
+        //     },
+        //     {
+        //         "title": "Must buy!",
+        //         "comment": "Very good product"
+        //     }]
+
+        // },
+        // {
+        //     "id": "S4",
+        //     "name": "Wilson helmet black",
+        //     "brand": "Wilson",
+        //     "price": 400,
+        //     "image": ["assets/images/helmet_s41.png", "assets/images/helmet_s41.png", "assets/images/helmet_s41.png"],
+        //     "features": 
+        //     {
+        //         "Material": "plastic",
+        //         "color": "black"
+        //     },
+        //     "reviews": [
+        //     {
+        //         "title": "Four Stars",
+        //         "comment": "Box quality is not good but the product is very good "
+        //     },
+        //     {
+        //         "title": "Good Buy",
+        //         "comment": "Great Value for money...Good Helmet for club professionals., fits properly without the wobble."
+        //     }]
+
+        // },
+        // {
+        //     "id": "S5",
+        //     "name": "Wilson 4 3/8 Strung",
+        //     "brand": "Wilson",
+        //     "price": 1793,
+        //     "image": ["assets/images/tennis_s51.png", "assets/images/tennis_s52.png", "assets/images/tennis_s53.png"],
+        //     "features": 
+        //     {
+        //         "Material": "aluminium",
+        //         "color": "black"
+        //     },
+        //     "reviews": [
+        //     {
+        //         "title": "Good",
+        //         "comment": "Good"
+        //     },
+        //     {
+        //         "title": "Colour mismatch",
+        //         "comment": "Picture showed green coloured racquet but received red one. It served my purpose but still not happy with this (deliberate) mistake"
+        //     }]
+
+        // },
+        // {
+        //     "id": "S6",
+        //     "name": "Hero RADAR TOUR",
+        //     "brand": "Hero",
+        //     "price": 2729,
+        //     "image": ["assets/images/tennis_s61.png", "assets/images/tennis_s62.png", "assets/images/tennis_s63.png"],
+        //     "features": 
+        //     {
+        //         "Material": "aluminium",
+        //         "color": "blue"
+        //     },
+        //     "reviews": [
+        //     {
+        //         "title": "Four Stars",
+        //         "comment": "Box quality is not good but the product is very good "
+        //     },
+        //     {
+        //         "title": "Good Buy",
+        //         "comment": "Great Value for money...Good Helmet for club professionals., fits properly without the wobble."
+        //     }]
+
+        // },
+        // {
+        //     "id": "S7",
+        //     "name": "Nike Cricket Ball",
+        //     "brand": "Nike",
+        //     "price": 2300,
+        //     "image": ["assets/images/cricket_s71.png", "assets/images/cricket_s72.png", "assets/images/cricket_s73.png"],
+        //     "features":             {
+        //         "Material": "leather",
+        //         "color": "red"
+        //     },
+        //     "reviews": [
+        //     {
+        //         "title": "Good choice",
+        //         "comment": "Good Quality"
+        //     },
+        //     {
+        //         "title": "Awesome",
+        //         "comment": "Awesome"
+        //     }]
+        // },
+
         {
             "id": "S1",
-            "name": "Nivia Storm Football - Size: 5",
-            "brand": "Nivia",
-            "price": 272,
-            "image": ["assets/images/football_s01.png", "assets/images/football_s12.png", "assets/images/football_s13.png"],
-            "features": [
-            {
-                "Material": "Rubber",
-                "color": "White",
-                "Weight": "420"
-            }],
-            "reviews": [
-            {
-                "title": "Nice",
-                "comment": "This product is awesome"
-            },
-            {
-                "title": "Rubber will hurt",
-                "comment": "Rubber Moulding will hurt on legs if you dont play with shoes. A bit more bouncy ball. And this line because the review needed min 100 characters"
-            }]
-
-        },
-        {
-            "id": "S2",
-            "name": "Nike FC Barcelona Football-Size:5(Pack of 1, Blue)",
-            "brand": "Nike",
-            "price": 300,
-            "image": ["assets/images/football_s21.png", "assets/images/football_s22.png", "assets/images/football_s23.png"],
-            "features": [
-            {
-                "Material": "Rubber",
-                "color": "blue",
-                "Weight": "420"
-            }],
-            "reviews": [
-            {
-                "title": "Luv it",
-                "comment": "Is it real"
-            },
-            {
-                "title": "Product as expected",
-                "comment": "Happy 😊"
-            }]
-
-        },
-        {
-            "id": "S3",
-            "name": "SG Optipro Cricket Helmet  (Assorted)",
-            "brand": "SG",
-            "price": 979,
-            "image": ["assets/images/helmet_s31.png", "assets/images/helmet_s32.png", "assets/images/helmet_s33.png"],
-            "features": [
-            {
-                "Material": "plastic",
-                "color": "blue"
-            }],
-            "reviews": [
-            {
-                "title": "Pretty good",
-                "comment": "The Product was excellent but one problem was that one bolt was missing. It doesn't create any problem but due to that the product was not complete"
-            },
-            {
-                "title": "Must buy!",
-                "comment": "Very good product"
-            }]
-
-        },
-        {
-            "id": "S4",
-            "name": "GS helmet black",
-            "brand": "GS",
-            "price": 400,
-            "image": ["assets/images/helmet_s41.png", "assets/images/helmet_s41.png", "assets/images/helmet_s41.png"],
-            "features": [
-            {
-                "Material": "plastic",
-                "color": "black"
-            }],
-            "reviews": [
-            {
-                "title": "Four Stars",
-                "comment": "Box quality is not good but the product is very good "
-            },
-            {
-                "title": "Good Buy",
-                "comment": "Great Value for money...Good Helmet for club professionals., fits properly without the wobble."
-            }]
-
-        },
-        {
-            "id": "S5",
-            "name": "Wilson Advantage XL 4 3/8 Strung  (Black, Green, Weight - 290 g)",
-            "brand": "Wilson",
-            "price": 1793,
-            "image": ["assets/images/tennis_s51.png", "assets/images/tennis_s52.png", "assets/images/tennis_s53.png"],
-            "features": [
-            {
-                "Material": "aluminium",
-                "color": "black"
-            }],
-            "reviews": [
-            {
-                "title": "Good",
-                "comment": "Good"
-            },
-            {
-                "title": "Colour mismatch",
-                "comment": "Picture showed green coloured racquet but received red one. It served my purpose but still not happy with this (deliberate) mistake"
-            }]
-
-        },
-        {
-            "id": "S6",
-            "name": "Cosco RADAR TOUR 2.5 Strung  (Multicolor, Weight - 270)",
-            "brand": "Cosco",
-            "price": 2729,
-            "image": ["assets/images/tennis_s61.png", "assets/images/tennis_s62.png", "assets/images/tennis_s63.png"],
-            "features": [
-            {
-                "Material": "aluminium",
-                "color": "blue"
-            }],
-            "reviews": [
-            {
-                "title": "Four Stars",
-                "comment": "Box quality is not good but the product is very good "
-            },
-            {
-                "title": "Good Buy",
-                "comment": "Great Value for money...Good Helmet for club professionals., fits properly without the wobble."
-            }]
-
-        },
-        {
-            "id": "S7",
-            "name": "Prokyde Delta Crown Cricket Ball - Size: 5  (Pack of 1, Red)",
-            "brand": "Prokyde",
-            "price": 2300,
-            "image": ["assets/images/cricket_s71.png", "assets/images/cricket_s72.png", "assets/images/cricket_s73.png"],
-            "features": [
-            {
-                "Material": "leather",
-                "color": "red"
-            }],
-            "reviews": [
-            {
-                "title": "Good choice",
-                "comment": "Good Quality"
-            },
-            {
-                "title": "Awesome",
-                "comment": "Awesome"
-            }]
-        },
-
-        {
-            "id": "S8",
-            "name": "Hero Blossam 16T 16 T Single Speed Road Cycle  (Blue)",
-            "brand": "hero",
+            "name": "Hero Blossam Cycle",
+            "brand": "Hero",
             "price": 2895,
             "image": ["assets/images/cycling11.png", "assets/images/cycling13.png", "assets/images/cycling14.png"],
             "features":
@@ -1214,29 +1220,24 @@
                 "idealFor": "Kids",
                 "frameMaterial": "Steel",
                 "brakeType": "Caliper Brake",
-                "gear": "Single Speed",
-                "tire Size": 16,
-                "frame Size": 10
+                "Gear": "Single Speed",
+                "tireSize": 16,
+                "frameSize": 10
             },
             "desc": "Take up cycling and regain your healthy with this Hero Octane Parkour cycle.This aluminium-frame cycle has sturdy fat tyres, V-brakes, a steel handlebar,and an extension stem.",
             "reviews": [
                 {
                     "title": "goodQualityProduct",
-                    "decription": "great"
+                    "comment": "great"
                 },
 
                 {
                     "title": "Value-for-money",
-                    "description": "Good to have this with me"
-
-                },
-
-                {
-
-                    "title": "Decent product",
-                    "description": "Hi Cycle is looking very nice ,it was delivered also on time as it was scheduled. But reflectors show in wheels were not received. Riding experience is also good .cycle is very light weight. I have enjoyed riding this bicycle."
+                    "comment": "Good to have this with me"
 
                 }
+
+
 
 
             ]
@@ -1244,9 +1245,9 @@
 
 
         {
-            "id": "S9",
-            "name": "Hero Spunky 26 T Single Speed Road Cycle  (Black)",
-            "brand": "hero",
+            "id": "S2",
+            "name": "Hero Spunky Cycle",
+            "brand": "Hero",
             "price": 3215,
             "image": [
                 "assets/images/cycling21.png",
@@ -1259,16 +1260,37 @@
                 "idealFor": "Kids",
                 "frameMaterial": "Steel",
                 "brakeType": "V Brake ",
-                "gear": "Single Speed",
-                "tireSize": "26",
-                "frameSize": "18"
+                "Gear": "Single Speed",
+                "tireSize": 26,
+                "frameSize": 18
 
-            }
+
+
+
+            },
+
+
+
+            "desc": "Take up cycling and regain your healthy with this Hero Octane Parkour cycle.This aluminium-frame cycle has sturdy fat tyres, V-brakes, a steel handlebar,and an extension stem.",
+            "reviews": [
+                {
+                    "title": "goodQualityProduct",
+                    "comment": "great"
+                },
+
+                {
+                    "title": "Value-for-money",
+                    "comment": "Good to have this with me"
+
+                }
+
+
+            ]
         },
         {
-            "id": "S10",
-            "name": "Hercules Roadeo Wild Kat 20 T Single Speed BMX Cycle  (White, Pink)",
-            "brand": "Hercules",
+            "id": "S3",
+            "name": "Nike BMX Cycle",
+            "brand": "Nike",
             "price": 3700,
             "image": [
                 "assets/images/cycling31.png",
@@ -1279,42 +1301,41 @@
             {
                 "riderHeight": "4ft - 4ft 11 inches",
                 "idealFor": "Kids",
-                "fork": "none ",
+
                 "frameMaterial": "Steel",
                 "brakeType": "Disc  Brake ",
                 "Gear": "Single Speed",
-                "tireSize": "20 inch",
-                "frameSize": "13 inch"
+                "tireSize": 20,
+                "frameSize": 13
+
+
+
+
+
 
             },
             "desc": "Take up cycling and regain your healthy with this Hero Octane Parkour cycle.This aluminium-frame cycle has sturdy fat tyres, V-brakes, a steel handlebar,and an extension stem.",
             "reviews": [
                 {
                     "title": "Very practical and a sweet ride",
-                    "decription": "Loved the simplicity and design of this bike"
+                    "comment": "Loved the simplicity and design of this bike"
                 },
 
                 {
                     "title": "Simply awesome",
-                    "description": "Nice economical bicycle"
-
-                },
-
-                {
-
-                    "title": "Classy product",
-                    "description": "Cycle colour and everything was good but there is one problem.i got the product disassembled.i suggest everyone to buy n worth for money."
+                    "comment": "Nice economical bicycle"
 
                 }
+
             ]
         },
 
 
 
         {
-            "id": "S11",
-            "name": "Hercules Frolic 12 T Single Speed Recreation Cycle  (Blue, Yellow)",
-            "type": "hercues",
+            "id": "S4",
+            "name": "Nike Recreation Cycle",
+            "brand": "Nike",
             "price": 1513,
             "image": [
                 "assets/images/cycling41.png",
@@ -1325,38 +1346,35 @@
             {
                 "riderHeight": "2 ft 10 inches-3 ft 8 inches",
                 "idealFor": "Kids",
-                "fork": "Front ",
+
                 "frameMaterial": "Steel",
                 "brakeType": "Caliper Brake ",
                 "Gear": "Single Speed",
-                "tireSize": "12 inch",
-                "frameSize": "12 inch"
+                "tireSize": 12,
+                "frameSize": 12
+
+
+
+
+
 
             },
             "desc": "Take up cycling and regain your healthy with this Hero Octane Parkour cycle.This aluminium-frame cycle has sturdy fat tyres, V-brakes, a steel handlebar,and an extension stem.",
             "reviews": [
                 {
                     "title": "goodQualityProduct",
-                    "decription": "great"
+                    "comment": "great"
                 },
 
                 {
                     "title": "Value-for-money",
-                    "description": "Good to have this with me"
-
-                },
-
-                {
-
-                    "title": "Decent product",
-                    "description": "Hi Cycle is looking very nice ,it was delivered also on time as it was scheduled. But reflectors show in wheels were not received. Riding experience is also good .cycle is very light weight. I have enjoyed riding this bicycle."
+                    "comment": "Good to have this with me"
 
                 }
 
 
             ]
         }
-
 
 
     ]

@@ -1,11 +1,28 @@
 
-<div class="sidenav col-md-2">
-    <a ui-sref="mobile">Mobiles</a>
-    <a ui-sref="fashion">Fashion</a>
-    <a ui-sref="sports">Sports</a>
-   <!--  <a href="#">Contact</a> -->
-</div>
-<div class="jumbotron text-center col-md-10">
-    <h1>The Sports Page</h1>
-    <!-- <p>This page demonstrates <span class="text-danger">nested</span> views.</p>   -->  
-</div>
+    <div class="sidenav col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        <a ui-sref="mobile">Mobiles</a>
+        <a ui-sref="fashion">Fashion</a>
+        <a ui-sref="sports">Sports</a>
+        <h4>Filter by Brand</h4>
+        <div ng-repeat="brand in brands" class="navbar-brands">
+            <input type="checkbox" ng-model="brandfilter[$index]" ng-true-value="'{{brand}}'" /> {{brand}}</div>
+        <h4>Filter by Price</h4>
+        <rzslider rz-slider-model="slider.min" rz-slider-high="slider.max" rz-slider-options="slider.options"></rzslider>
+    </div>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-xs-offset-2">
+       
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-center" data-ng-repeat="sports in sportsData | selectedTags3:brandfilter | filter: filterFn()">
+                <div class="card">
+                    <div class="card-body">
+                        <a><img  src="{{sports.image[0]}}" ng-click=setId(sports.id)></a>
+                        <div class="card-title fashionCard">
+                            <h4>{{sports.name}}</h4>
+                            <h4> ₹: {{sports.price}}</h4>
+                        </div>
+                        <button class="btn btn-info details-button" ng-click=setId(sports.id)>Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

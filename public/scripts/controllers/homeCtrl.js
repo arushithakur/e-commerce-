@@ -29,7 +29,7 @@ myApp.controller('homeCtrl', function($scope, $q, allService) {
             function(result) {
                 console.log(result);
 
-                $scope.cData = result;
+                $scope.cData = result.result;
 
 
 
@@ -45,7 +45,7 @@ myApp.controller('homeCtrl', function($scope, $q, allService) {
             function(result) {
                 console.log(result);
 
-                $scope.mData = result;
+                $scope.mData = result.result;
 
 
 
@@ -60,7 +60,7 @@ myApp.controller('homeCtrl', function($scope, $q, allService) {
             function(result) {
                 console.log(result);
 
-                $scope.sData = result;
+                $scope.sData = result.result;
 
 
 

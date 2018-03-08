@@ -1,0 +1,169 @@
+<div class="sidenav col-md-2 col-sm-2 col-xs-2">
+    <a ui-sref="mobile">Mobiles</a>
+    <a ui-sref="fashion">Fashion</a>
+    <a ui-sref="sports">Sports</a>
+    <!--  <a href="#">Contact</a> -->
+</div>
+<!-- <div class="main col-md-10 col-md-offset-2 col-sm-10 col-xs-10">
+<h4>{{product.name}}</h4>
+<h4>{{product.brand}}</h4>
+<h4>{{product.price}}</h4>
+<h4>{{product.features.color}}</h4>
+<h4>{{product.features.material}}</h4>
+<div ><img src="{{product.image[0]}}"/></div>
+<div ><img src="{{product.image[1]}}"/></div>
+<div ><img src="{{product.image[2]}}"/></div>
+ <div><button class="btn btn-info" ng-click="setCart(product)">Add to cart</button></div>
+</div>
+ -->
+<div class="main col-md-10 col-md-offset-2 col-sm-10 col-xs-10">
+    <div class="single-product">
+        <div class="row" id="">
+            <div class="col-md-4 single-top-left">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li data-thumb="{{product.image[0]}}">
+                            <div class="thumb-image detail_images"> <img src="{{product.image[0]}}" data-imagezoom="true" class="img-responsive" alt=""> </div>
+                        </li>
+                        <li data-thumb="{{product.image[1]}}">
+                            <div class="thumb-image"> <img src="{{product.image[1]}}" data-imagezoom="true" class="img-responsive" alt="" /> </div>
+                        </li>
+                        <li data-thumb="{{product.image[2]}}">
+                            <div class="thumb-image"> <img src="{{product.image[2]}}" data-imagezoom="true" class="img-responsive" alt="" /> </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 single-top-right">
+                <div clas="row">
+                    <h3 class="item_name text-center">{{product.name}}</h3></div>
+                <div class="row">
+                    <p>Processing Time: Item will be shipped out within 2-3 working days. </p>
+                </div>
+                <div class="single-rating">
+                    <ul>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                        <li class="rating">3 reviews</li>
+                        <li><a href="#">Add your review</a></li>
+                    </ul>
+                </div>
+                <div class="single-price">
+                    <ul>
+                        <li class="product-price">Rs.{{product.price}}</li>
+                        <li>
+                            <del>Rs.16000</del>
+                        </li>
+                        <li><span class="off">10% OFF</span></li>
+                        <li>Ends on: June,5th</li>
+                        <li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i> Coupon</a></li>
+                    </ul>
+                </div>
+                <p class="single-price-text">
+                    <span class="pull-left title-sidebar"><h3><i class="fa fa-info-circle"></i> Features</h3></span>
+                	 <div class="col-md-12">Color:{{product.features.color}}</div>
+                        <div class="col-md-12">Screen:{{product.features.screen}}</div>
+                        <div class="col-md-12">Processor:{{product.features.processor}}</div>
+                        <div class="col-md-12">Operating System:{{product.features.os}}</div>
+                        <div class="col-md-12">Battery:{{product.features.battery}}</div>
+                         <div class="col-md-12">Camera:{{product.features.camera}}</div>
+                          <div class="col-md-12">RAM:{{product.features.ram}}</div>
+                           <div class="col-md-12">ROM:{{product.features.rom}}</div>
+                           <div class="col-md-12">Warranty:{{product.features.warranty}}</div> </p>
+                <form>
+                   <!--  <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="add" value="1" />
+                    <input type="hidden" name="w3ls_item" value="Snow Blower" />
+                    <input type="hidden" name="amount" value="540.00" /> -->
+                    <button type="submit" class="btn btn-red" ng-click="setCart(product)"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+                    <button class="btn btn-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> Add to Wishlist</button>
+                </form>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <!--   <div class="single-page-icons social-icons">
+        <ul>
+            <li>
+                <h4>Share on</h4></li>
+            <li><a href="#" class="fa fa-facebook-square icon facebook"> </a></li>
+            <li><a href="#" class="fa fa-twitter-square icon twitter"> </a></li>
+            <li><a href="#" class="fa fa-google-plus-square icon googleplus"> </a></li>
+            <li><a href="#" class="fa fa-rss-square icon rss"> </a></li>
+        </ul>
+    </div> -->
+        <div class="single-product-everything">
+            <div class="single-extra-div">
+                <a data-toggle="collapse" class="pointer main" aria-expanded="true" data-target="#productDescriptionCollapse" aria-controls="#productDescriptionCollapse">
+                        <span class="pull-left title-sidebar"><i class="fa fa-info-circle"></i> Product Description</span>
+
+                        <span class="pull-right"><i class="fa fa-plus"></i></span>
+                        <span class="pull-right"><i class="fa fa-minus"></i></span>
+                      <div class="clearfix"></div>
+                    </a>
+                <div id="productDescriptionCollapse" class="collapse collapseDiv">
+                     <p>{{product.desc}}</p>
+                 
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- End single product extra div -->
+            <div class="single-extra-div">
+                <a data-toggle="collapse" class="pointer main" aria-expanded="true" data-target="#productReviewCollapse" aria-controls="#productReviewCollapse">
+                        <span class="pull-left title-sidebar"> <i class="fa fa-check-square-o"></i>
+                            Product Reviews <span class="badge">3</span>
+                        </span>
+
+                        <span class="pull-right"><i class="fa fa-plus"></i></span>
+                        <span class="pull-right"><i class="fa fa-minus"></i></span>
+                        <div class="clearfix"></div>
+                    </a>
+                <div id="productReviewCollapse" class="collapse collapseDiv">
+                    <div class="review">
+                        <h4>{{product.reviews[0].title}}:</h4>
+                        <p>{{product.reviews[0].comment}} </p>
+                    </div>
+                    <div class="review">
+                        <h4>{{product.reviews[1].title}}:</h4>
+                        <p>{{product.reviews[1].comment}} </p>
+                    </div>
+                    <div class="review">
+                        <h4>{{product.reviews[2].title}}:</h4>
+                        <p>{{product.reviews[2].comment}} </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End single product extra div -->
+            <!-- <div class="single-extra-div">
+            <a data-toggle="collapse" class="pointer main" aria-expanded="true" data-target="#productHelpCollapse" aria-controls="#productHelpCollapse">
+                        <span class="pull-left title-sidebar"> <i class="fa fa-question-circle"></i> Help </span>
+
+                        <span class="pull-right"><i class="fa fa-plus"></i></span>
+                        <span class="pull-right"><i class="fa fa-minus"></i></span>
+                        <div class="clearfix"></div>
+                    </a> -->
+            <!--    <div id="productHelpCollapse" class="collapse collapseDiv">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+<!-- End single product extra div -->
+<script>
+// $(window).load(function() {
+$(document).ready(function() {
+    // });
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+    });
+});
+</script>

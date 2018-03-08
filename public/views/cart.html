@@ -1,0 +1,43 @@
+<div class="sidenav col-md-2 col-sm-2 col-xs-2">
+    <a ui-sref="mobile">Mobiles</a>
+    <a ui-sref="fashion">Fashion</a>
+    <a ui-sref="sports">Sports</a>
+    <!--  <a href="#">Contact</a> -->
+</div>
+<div class="col-md-10 col-md-offset-2">
+   <h3 class="text-center">Shopping Cart</h3>
+    <div class="table-responsive ">
+        <table class="table table-striped">
+            <tr class="text-center">
+                <th class="text-center">Image</th>
+                <th class="text-center">Product Id</th>
+                <th class="text-center"> Name</th>
+                <th class="text-center">Brand</th>
+                <th class="text-center">Quantity</th>
+                <th class="text-center">Price</th>
+                <th class="text-center">Total</th>
+                <th class="text-center">Delete</th>
+
+            </tr>
+            <tr ng-repeat="product in products ">
+                <td class="text-center"><img src="{{product.image[0]}}" style="height: 20%; width:20%" ;  /></td>
+                <td class="text-center">{{product.id}}</td>
+                <td class="text-center">{{product.name}}</td>
+                <td class="text-center">{{product.brand}}</td>
+                <td class="text-center"><input type="number" ng-model="quantity" min="1" max="100"> </td>
+                <td class="text-center">{{product.price}}</td>
+                <td class="text-center">{{product.price*quantity}}</td>
+                
+                 <td><button type="button" class="btn btn-danger" ng-click="removeCart(product.id,$index)">Delete</button></td>
+               
+
+            </tr>
+
+            <tr>
+                 <td><h3>{{total()}}</h3></td>
+               
+
+            </tr>
+        </table>
+    </div>
+</div>

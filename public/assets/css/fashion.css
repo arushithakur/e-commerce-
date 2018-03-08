@@ -1,6 +1,6 @@
 .fashionCard {
 
-height:10%;
+height:15%;
 
 
 } 
@@ -9,4 +9,36 @@ height:10%;
 
 height: 100%;
 width:60%;
+}
+
+.sidenav h3{
+
+	color: #0000ff;
+	}
+
+
+	.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.divText input {
+
+
+	color: white;
+ 
+
+}
+
+.sidenav a{
+
+   color:#fff;
+
+}
+.navbar-brands 
+{
+
+	   color:#fff;
+	   padding-bottom: 10px;
+	   
+
 }

@@ -3,98 +3,112 @@
 <head>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="rzslider.min.css" /> -->
     <!-- jQuery library -->
-   
     <!--   <link rel="stylesheet" href="../node_modules/angular-slick-carousel/slick/slick-theme.css"> -->
-<!--     <link href="./node_modules/dist/angular-carousel.css" rel="stylesheet" type="text/css" /> -->
- <!--    <link href="./assets/css/angular-carousel.css.map" rel="stylesheet" type="text/css" />
+    <!--     <link href="./node_modules/dist/angular-carousel.css" rel="stylesheet" type="text/css" /> -->
+    <!--    <link href="./assets/css/angular-carousel.css.map" rel="stylesheet" type="text/css" />
     <link href="./assets/css/angular-carousel.min.css" rel="stylesheet" type="text/css" /> -->
+         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./assets/css/rzslider.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/home.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/fashion.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/sports.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+     <link rel="stylesheet" type="text/css" href="./assets/css/queries.css">
+    <!-- <link rel="stylesheet" type="text/css" href="navbar-fixed-left.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <style>
-
     .navbar {
         border-radius: 0;
     }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- JS (load angular, ui-router, and our custom js file) -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-   
+    <!--  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
-
-   <!--          <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script> -->
-<!--    <script src="angular.js"></script>
+    <!--          <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script> -->
+    <!--    <script src="angular.js"></script>
 <script src="angular-touch.js"></script> -->
-<!-- <script src="./assets/css/angular-carousel.js"></script> -->
-<!--  <script src="./assets/css/angular-carousel.min.js"></script> -->
+    <!-- <script src="./assets/css/angular-carousel.js"></script> -->
+    <!--  <script src="./assets/css/angular-carousel.min.js"></script> -->
     <script src="./scripts/app.js"></script>
-    
     <script src="./scripts/services/allService.js"></script>
+    <!--    <script src="/path/to/angularjs/angular.min.js"></script> -->
+    <script src="./assets/js/rzslider.min.js"></script>
     <script src="./scripts/controllers/fashionCtrl.js"></script>
     <script src="./scripts/controllers/homeCtrl.js"></script>
+    <script src="./scripts/controllers/mobileCtrl.js"></script>
+    <script src="./scripts/controllers/sportsCtrl.js"></script>
+    <script src="./scripts/controllers/fashionProductCtrl.js"></script>
+    <script src="./scripts/controllers/mobileProductCtrl.js"></script>
+    <script src="./scripts/controllers/sportsProductCtrl.js"></script>
+    <script src="./scripts/controllers/cartCtrl.js"></script>
     <title>Our Web Store</title>
-   
 </head>
 <!-- apply our angular app to our site -->
 
 <body>
     <!-- NAVIGATION -->
-    <div class="container-fluid">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><span><img src="./assets/images/005-monitor.png"></span> WebStore</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNav">
-                <!--  <ul class="nav navbar-nav m-nav-middle-li">
+    <!-- <div class="container-fluid"> -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navBar-class">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span><img src="./assets/images/005-monitor.png"></span> WebStore</a>
+        </div>
+        <div class="collapse navbar-collapse text-navBar" id="myNav">
+            <!--  <ul class="nav navbar-nav m-nav-middle-li">
                     <li><a ui-sref="home">Home</a></li>
                     <li><a ui-sref="mobile">Mobiles</a></li>
                     <li><a ui-sref="laptop">Laptops</a></li>
                     <li><a ui-sref="speaker">Speakers</a></li>
                     <li><a ui-sref="television">Televisions</a></li>
                 </ul> -->
-                <ul class="nav navbar-nav navbar-right ">
-                    <li><a ui-sref="cart" class="navBarRight"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Cart</a></li>
-                    <li><a ui-sref="admin" class="navBarRight"><i class="fas fa-upload"></i>Admin</a></li>
-                </ul>
-                <!--    <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a ui-sref="cart" class="navBarRight" style="padding-right:20px" ;><span class="glyphicon glyphicon-shopping-cart icon-small" aria-hidden="true" "></span>Cart</a></li>
+                <!--  <li><a ui-sref="admin" class="navBarRight"><i class="fas fa-upload"></i>Admin</a></li> -->
+            </ul>
+            <!--    <ul class="nav navbar-nav navbar-right">
                 <!--  <li><a href="#">Sign Up</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"/>Login</a></li>  -->
-                <!--  <form class="form-inline form-group">
+            <!--  <form class="form-inline form-group">
                     <input class="form-control mr-sm-2" id="myInput" type="search" placeholder="Search" aria-label="Search">
                     <!-- style="padding-top: 20px;" > -->
-                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                         style="margin-top: 20px; margin-bottom: 20px"Search</button>
                 </form>
             </ul>   -->
-            </div>
-        </nav>
-        <!-- MAIN CONTENT -->
-        <div class="container-fluid view-container" style=" overflow:hidden">
-            <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
-            <div ui-view></div>
         </div>
-        <footer class="page-footer">
+    </nav>
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid view-container" style=" overflow:hidden">
+        <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+        <div ui-view style="padding-top:51px; padding-bottom: 200px " class="view-div"></div>
+    </div>
+    <footer class="page-footer" style="margin-left: -20px">
+        <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-12">
                     <div class="footer-headings"> Category</div>
                     <div class="row">
-                        <div class="col-sm-12 text-center footer-content">
+                        <div class="col-sm-12">
                             <ul class="footer-category-list">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">School</a></li>
@@ -105,10 +119,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-12">
                     <div class="footer-headings"> Useful Links</div>
                     <div class="row">
-                        <div class="col-sm-12 text-center footer-content">
+                        <div class="col-sm-12">
                             <ul class="footer-category-list">
                                 <li><a href="#">FAQ</a></li>
                                 <li><a href="#">Return Policy</a></li>
@@ -119,79 +133,78 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-12">
                     <div class="footer-headings"> Social Media</div>
-                    <div class="row social-row">
-                        <div class="col-sm-12 text-center footer-content">
-                            <div class="row social-row-content">
-                                <div class="col-md-2 col-sm-6 col-md-offset-2"><img src="./assets/images/006-google-plus.png" class="footer-social-image"></div>
-                                <div class="col-md-8  col-sm-6 "><a href="https://plus.google.com/">Google Plus</a></div>
-                            </div>
-                            <div class="row social-row-content">
-                                <div class="col-md-2 col-sm-6 col-md-offset-2 "><img src="./assets/images/007-linkedin.png" class="footer-social-image"></div>
-                                <div class="col-md-8 col-sm-6"><a href="https://in.linkedin.com/">linkedIn</a></div>
-                            </div>
-                            <div class="row social-row-content">
-                                <div class="col-md-2 col-sm-6 col-md-offset-2"><img src="./assets/images/008-social-media-1.png" class="footer-social-image"></div>
-                                <div class="col-md-8"><a href="https://twitter.com/login">Twitter</a></div>
-                            </div>
-                            <div class="row social-row-content">
-                                <div class="col-md-2 col-sm-6 col-md-offset-2"><img src="./assets/images/009-social-media.png" class="footer-social-image"></div>
-                                <div class="col-md-8"><a href="https://www.facebook.com/">Facebook</a></div>
-                            </div>
-                            <!-- <ul class="footer-category-list">
-                            <li><img src="./assets/images/006-google-plus.png" class="footer-social-image"><a href="https://plus.google.com/">Google Plus</a></li>
-                            <li><img src="./assets/images/007-linkedin.png" class="footer-social-image"><a href="https://in.linkedin.com/">linkedIn</a></li>
-                            <li><img src="./assets/images/008-social-media-1.png" class="footer-social-image"><a href="https://twitter.com/login">Twitter</a></li>
-                            <li><img src="./assets/images/009-social-media.png" class="footer-social-image"><a href="https://www.facebook.com/">Facebook</a></li>
-                        </ul> -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="footer-category-list">
+                                <li>
+                                    <a href="https://plus.google.com/">
+                                        <img src="./assets/images/006-google-plus.png" class="footer-social-image">
+                                    Google Plus</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/007-linkedin.png" class="footer-social-image">
+                                        Linkedin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/008-social-media-1.png" class="footer-social-image">
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/009-social-media.png" class="footer-social-image">
+                                        Facebook
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-12">
                     <div class="footer-headings"> Contact Us</div>
                     <div class="row">
-                        <div class="col-sm-12 text-center footer-content">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6 "><img src="./assets/images/001-computer.png" class="footer-social-image"></div>
-                                <div class="col-md-8 col-md-offset-2 col-sm-6">
-                                    <ul class="footer-category-list">
-                                        <li>5271521</li>
-                                        <li>72865865865</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6"><img src="./assets/images/002-technology.png" class="footer-social-image"></div>
-                                <div class="col-md-8 col-md-offset-2">
-                                    <ul class="footer-category-list">
-                                        <li>5271521</li>
-                                        <li>72865865865</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6"><img src="./assets/images/telephone.png" class="footer-social-image"></div>
-                                <div class="col-md-8 col-md-offset-2">
-                                    <ul class="footer-category-list">
-                                        <li>contact@webstore.com</li>
-                                        <li>queries@webstore.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6"><img src="./assets/images/003-clock.png" class="footer-social-image"></div>
-                                <div class="col-md-8 col-md-offset-2">
-                                    <ul class="footer-category-list">
-                                        <li>5271521</li>
-                                        <li>72865865865</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="col-sm-12">
+                            <ul class="footer-category-list">
+                                <li>
+                                    <a href="#">
+                                    <img src="./assets/images/001-computer.png" class="footer-social-image">
+                                    9999999999</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <img src="./assets/images/002-technology.png" class="footer-social-image">
+                                    9999999999</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+                                    <img src="./assets/images/telephone.png" class="footer-social-image">
+                                    test@testing.com</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <img src="./assets/images/003-clock.png" class="footer-social-image">
+                                    1234567891</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-        </footer>
+            </div>
+    </footer>
 </body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="owl.carousel.min.js"></script>
+<script src="jquery.flexslider.js" type="text/javascript"></script>
+<!--flex slider-->
+<script src="./assets/js/imagezoom.js" type="text/javascript"></script>
+<script src="wow.min.js"></script>
+<!-- <script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="webslidemenu.js"></script> -->
+<script type="text/javascript" src="main.js"></script>
 
 </html>

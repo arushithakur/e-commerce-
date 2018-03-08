@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ui.router']);
+var myApp = angular.module('myApp', ['ui.router','rzModule']);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
@@ -17,6 +17,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         .state('mobile', {
             url: '/mobile',
             templateUrl: './views/mobile.html',
+            controller:'mobileCtrl'
             
         })
 
@@ -30,6 +31,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
          .state('sports', {
             url: '/sports',
             templateUrl: './views/sports.html',
+            controller:'sportsCtrl'
             
         })
          .state('television', {
@@ -40,7 +42,28 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 
          .state('cart', {
             url: '/cart',
-            templateUrl: 'views/cart.html'
+            templateUrl: 'views/cart.html',
+            controller:'cartCtrl'
+            
+        })
+           .state('fashionProduct', {
+            url: '/fashionProduct',
+            templateUrl: './views/fashionProduct.html',
+            controller:'fashionProductCtrl'
+            
+        })
+
+           .state('mobileProduct', {
+            url: '/mobileProduct/:id',
+            templateUrl: './views/mobileProduct.html',
+            controller:'mobileProductCtrl'
+            
+        })
+
+           .state('sportsProduct', {
+            url: '/sportsProduct',
+            templateUrl: './views/sportsProduct.html',
+            controller:'sportsProductCtrl'
             
         })
 

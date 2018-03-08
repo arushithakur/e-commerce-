@@ -1,43 +1,95 @@
-<div class="sidenav col-md-2">
+<div class="sidenav col-lg-2 col-md-2 col-sm-2 col-xs-2">
     <a ui-sref="mobile">Mobiles</a>
     <a ui-sref="fashion">Fashion</a>
     <a ui-sref="sports">Sports</a>
-    <h3>Filter by Brand</h3>
-    <!-- <div class="checkbox">
-        <label>
-            <input type="checkbox" value="Vero Moda">Vero Moda</label>
-    </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="Biba">Biba</label>
-    </div>
-    <div class="checkbox disabled">
-        <label>
-            <input type="checkbox" value="Tommy Hilfiger">Tommy Hilfiger</label>
-    </div> -->
-    <!--  <div ng-repeat="u in textBox  ">
-        <input type="checkbox" ng-click='searchItem()' ng-model="search[u]" /> {{ u }}
-    </div> -->
-    <div ng-repeat="u in textBox  ">
-        <input type="checkbox" ng-model="search[u]" /> {{ u }}
-    </div>
+    <h4>Filter by Brand</h4>
+    
+    <div ng-repeat="brand in brands" class="navbar-brands">
+        <input type="checkbox" ng-model="brandfilter[$index]" ng-true-value="'{{brand}}'" /> {{brand}}</div>
+   
+    <h4>Filter by Price</h4>
+    <rzslider rz-slider-model="slider.min" rz-slider-high="slider.max" rz-slider-options="slider.options">
+    </rzslider>
+  
 </div>
-<div class="col-md-10">
-    <div class="jumbotron text-center">
-        <h1>The Fashion Page display</h1>
-    </div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-md-offset-2">
+   
     <div class="row ">
-        <!--  <div class="col-md-3 text-center" data-ng-repeat="fashion in fashionData | selectedBrand:selectedBrands"> -->
-        <div class="col-md-3 text-center" data-ng-repeat="fashion in fashionData | filter : searchBy()">
+        
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-center" data-ng-repeat="fashion in fashionData | selectedTags1:brandfilter | filter: filterFn()">
             <div class="card">
                 <div class="card-body">
-                    <a><img src="{{fashion.image[0]}}"></a>
+                    <a><img class="button" src="{{fashion.image[0]}}" ng-click="setId(fashion.id)"></a>
                     <div class="card-title fashionCard">
                         <h4>{{fashion.name}}</h4>
+                        <h4> ₹: {{fashion.price}}</h4>
                     </div>
-                    <button class="btn btn-info">Details</button>
+                    <button class="btn btn-info details-button" ng-click=setId(fashion.id)>Details</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- <div class="row">
+    <div class="sidenav col-md-2 col-sm-12 col-xs-12" style="position: sticky;">
+        <div class="row">
+            <div class="col-sm-6 col-md-12 col-xs-6">
+                <div class="row">
+                    <div class="col">
+                        <a ui-sref="mobile">Mobiles</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a ui-sref="fashion">Fashion</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a ui-sref="sports">Sports</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-12 col-xs-6">
+                <div class="row">
+                    <div class="col">
+                        <h4>Filter by Brand</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div ng-repeat="brand in brands" class="navbar-brands">
+                            <input type="checkbox" ng-model="brandfilter[$index]" ng-true-value="'{{brand}}'" /> {{brand}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h4>Filter by Price</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <rzslider rz-slider-model="slider.min" rz-slider-high="slider.max" rz-slider-options="slider.options">
+                </rzslider>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12"  style="margin-top: 350px">
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-center" data-ng-repeat="fashion in fashionData | selectedTags1:brandfilter | filter: filterFn()">
+                <div class="card">
+                    <div class="card-body">
+                        <a><img class="button" src="{{fashion.image[0]}}" ng-click="setId(fashion.id)"></a>
+                        <div class="card-title fashionCard">
+                            <h4>{{fashion.name}}</h4>
+                            <h4> ₹: {{fashion.price}}</h4>
+                        </div>
+                        <button class="btn btn-info details-button" ng-click=setId(fashion.id)>Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

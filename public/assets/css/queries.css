@@ -1,0 +1,145 @@
+@media only screen and (min-width:1501px) {
+
+    /*.upper__sidenav {
+
+        display: none !important;
+    }
+
+    .sidenav {
+
+        width: 20%;
+        font-size: 18px;
+        display: block;
+    }*/
+}
+
+
+
+/* from big tablets to width smaller than row*/
+
+@media only screen and (min-width: 1024px) and (max-width:1500px) {
+
+   /* .upper__sidenav {
+
+        display: none !important;
+    }
+
+    .sidenav {
+
+        width: 20%;
+        font-size: 18px;
+        display: block;
+    }
+*/
+
+    .carousel-img {
+
+        height: 200px !important;
+        width: 50% !important;
+        margin-left: 25% !important;
+    }
+}
+
+
+
+/*small tablets to big tablets (768-1023px)*/
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+   /* .upper__sidenav {
+
+        display: none !important;
+    }
+
+    .sidenav {
+
+        width: 20% !important;
+        font-size: 15px;
+        display: block;
+    }*/
+
+    .content-space {
+
+        margin-left: 25%;
+    }
+}
+
+
+
+
+
+/*small phones to small tablets -smaller than ipad (481-767px)*/
+
+@media only screen and (min-width:481px) and (max-width:767px) {
+  /*  .upper__sidenav {
+
+        display: inline-block !important;
+    }
+
+    .sidenav {
+
+        width: 25%;
+        font-size: 12px;
+        display: none !important;
+    }
+    .sidenav h4 {
+        font-size: 15px !important;
+    }*/
+
+    .card-body img {
+
+        height: 30%;
+        width: auto;
+    }
+
+
+}
+
+
+
+
+
+/*small phones 0 to 480px*/
+
+@media only screen and (min-width:110px) and (max-width:470px) {
+
+   /* .upper__sidenav {
+
+        display: inline-block !important;
+    }
+
+    .sidenav {
+
+        width: 25%;
+        font-size: 12px;
+        display: none !important;
+    }*/
+
+
+    .card-body img {
+
+        height: 30%;
+        width: auto;
+    }
+
+/*
+    .sidenav h4 {
+        font-size: 12px !important;
+    }*/
+    .carousel-inner{
+
+    	height: 35% !important;
+    	overflow: visible !important;
+    }
+
+    .view-div{
+
+    	padding-bottom: 60px !important;
+    }
+    .left{
+    	margin-left:-5% !important; 
+    }
+    .right{
+
+    	margin-right: -10% !important;
+    }
+}

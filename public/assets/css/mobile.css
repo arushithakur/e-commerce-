@@ -1,0 +1,98 @@
+.fashionCard {
+
+/*height:15%;*/
+
+} 
+.cardImage
+{
+
+/*height: 100px;
+width:auto;*/
+}
+
+.sidenav h4{
+
+	color: #0000ff;
+	padding-left: 22px;
+
+	}
+
+
+	.sidenav a:hover ,
+	.sidenav a:active {
+    color: #0000ff;
+}
+
+
+	.sidenav a:link ,
+	.sidenav a:visited {
+    color: #0000ff;
+}
+.divText input {
+
+
+	color: white;
+ 
+
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 44px;
+}
+
+.card-body {
+	width: 65%;
+}
+
+.card-body a {
+	display: block;
+}
+
+.card-body a img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+.navbar-brands 
+{
+
+	   color:#0000ff;
+
+	      padding-bottom: 10px;
+	
+         /*
+         padding-left: 10px;*/
+
+}
+
+.sidenav{
+
+
+position: absolute;
+/*min-height: 2340px;
+*/
+
+}
+
+.sidenav a{
+
+
+color: #000;
+/*min-height: 2340px;
+*/
+
+}
+
+.content-space{
+
+	position: relative;
+}
+
+.brands-text input{
+
+color: #0000ff;
+}

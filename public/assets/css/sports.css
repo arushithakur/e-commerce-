@@ -1,0 +1,72 @@
+.fashionCard {
+
+  min-height: 10%;
+} 
+.cardImage
+{
+
+/*height: 100px;
+width:auto;*/
+}
+
+.sidenav h3{
+
+	color: #0000ff;
+	}
+
+
+	.sidenav a:hover {
+    color: #000;
+}
+
+.divText input {
+
+
+	color: white;
+ 
+
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 44px;
+}
+
+.card-body {
+	width: 65%;
+	height: auto;
+}
+
+.card-body a {
+	display: block;
+}
+
+.card-body a img {
+	max-width: 100%;
+	width: 100%;
+}
+
+.navbar-brands 
+{
+
+/*	  color:#fff;*/
+	   padding-bottom: 10px;
+	   padding-left: 22px;
+	
+
+
+}
+
+.details-button
+{
+
+	background-color:#053a65; 
+}
+
+.card-title h4{
+
+    font-size: 15px;
+
+}
